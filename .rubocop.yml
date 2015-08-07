@@ -1,0 +1,14 @@
+# We rescue from Exception on purpose in order to filter the backtrace
+# We re-raise the exception in any case
+Lint/RescueException:
+  Exclude:
+    - 'lib/closure_forwardable.rb'
+
+Metrics/MethodLength:
+  Max: 15
+
+# We don't want to document the top-level modules multiple times
+# And we don't want to use namespace modules as they can break with unusual
+# load-order. Thus, we simply disable this check.
+Style/Documentation:
+  Enabled: false
