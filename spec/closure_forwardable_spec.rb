@@ -35,6 +35,11 @@ describe ClosureForwardable do
     # Cleanup any updated debug settings after each test
     after { ClosureForwardable.debug = nil }
 
+    it 'defines FILE_REGEXP according to the actual file' do
+      expect(Regexp.new(module_file_regexp))
+        .to eql(ClosureForwardable::FILE_REGEXP)
+    end
+
     it 'filters the error backtrace by default' do
       ClosureForwardable.debug = nil
 
