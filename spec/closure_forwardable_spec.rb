@@ -32,6 +32,7 @@ describe ClosureForwardable do
     # code problems
     class MyError < StandardError; end
 
+    # Cleanup any updated debug settings after each test
     after { ClosureForwardable.debug = nil }
 
     it 'filters the error backtrace by default' do
