@@ -3,7 +3,8 @@ require 'closure_forwardable/version'
 require 'English'
 
 # The {ClosureForwardable} module provides delegation of specified methods to a
-# designated object, using the methods {#def_delegator} and {#def_delegators}.
+# designated object, using the methods {#delegate}, {#def_delegator}, and
+# {#def_delegators}.
 #
 # This module is intended to be used very similar to the `Forwardable` module in
 # the Ruby standard library. For basic usage guidelines, see there. Generally,
