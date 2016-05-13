@@ -23,6 +23,8 @@ module ClosureForwardable
   class << self
     # If true, `__FILE__` will remain in the backtrace in the event an exception
     # is raised.
+    #
+    # @return [Boolean]
     attr_accessor :debug
   end
 
