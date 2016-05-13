@@ -9,7 +9,7 @@ module ClosureForwardable
     MINOR = 1
     # PATCH version. It is incremented when making backwards-compatible
     # bug-fixes.
-    PATCH  = 0
+    PATCH  = 1
 
     # A standard string representation of the version parts
     STRING = [MAJOR, MINOR, PATCH].compact.join('.').freeze
